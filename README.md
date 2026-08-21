@@ -20,8 +20,19 @@
 </p>
 
 <p align="center">
+  <a href="https://www.tampermonkey.net/">
+    <img src="https://img.shields.io/badge/Get-Tampermonkey-FF6900?style=for-the-badge&logo=tampermonkey&logoColor=white" alt="Get Tampermonkey" />
+  </a>
+  &nbsp;
+  <a href="https://raw.githubusercontent.com/nightsamuraisec/btk-usom-sorgulama/main/usom_link_plugin.user.js">
+    <img src="https://img.shields.io/badge/Install-USOM%20Userscript-111827?style=for-the-badge" alt="Install Userscript" />
+  </a>
+</p>
+
+<p align="center">
   <a href="#-about-the-project">About</a> ·
   <a href="#-screenshots">Screenshots</a> ·
+  <a href="#-tampermonkey-userscript">Userscript</a> ·
   <a href="#-features">Features</a> ·
   <a href="#-folder-structure">Structure</a> ·
   <a href="#-built-with">Built With</a> ·
@@ -55,6 +66,23 @@ PyQt5 dual-panel app: BTK public site-query (OCR captcha) and USOM/SGB address A
 
 ---
 
+## 🧩 Tampermonkey Userscript
+
+1. Install **Tampermonkey**:
+   - [Chrome / Edge](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+   - [Firefox](https://addons.mozilla.org/firefox/addon/tampermonkey/)
+2. Click **Install USOM Userscript** (opens the raw `.user.js` — Tampermonkey prompts to add it):
+
+   **→ [Install usom_link_plugin.user.js](https://raw.githubusercontent.com/nightsamuraisec/btk-usom-sorgulama/main/usom_link_plugin.user.js)**
+
+Direct raw URL:
+
+```text
+https://raw.githubusercontent.com/nightsamuraisec/btk-usom-sorgulama/main/usom_link_plugin.user.js
+```
+
+---
+
 ## ✨ Features
 
 - 🔍 Domain query automation
@@ -70,7 +98,7 @@ PyQt5 dual-panel app: BTK public site-query (OCR captcha) and USOM/SGB address A
 ```text
 btk-usom-sorgulama/
 ├── btk_query.py
-├── usom_link_plugin.js
+├── usom_link_plugin.user.js
 ├── requirements.txt
 ├── screenshots/
 │   ├── gui.png
@@ -126,7 +154,9 @@ APP_DEBUG=false
 ```bash
 python btk_query.py
 ```
-Install `usom_link_plugin.js` in Tampermonkey.
+
+Userscript (one-click after Tampermonkey is installed):  
+[Install usom_link_plugin.user.js](https://raw.githubusercontent.com/nightsamuraisec/btk-usom-sorgulama/main/usom_link_plugin.user.js)
 
 ### Saving into `screenshots/`
 

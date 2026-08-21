@@ -20,8 +20,19 @@
 </p>
 
 <p align="center">
+  <a href="https://www.tampermonkey.net/">
+    <img src="https://img.shields.io/badge/Kur-Tampermonkey-FF6900?style=for-the-badge&logo=tampermonkey&logoColor=white" alt="Tampermonkey Kur" />
+  </a>
+  &nbsp;
+  <a href="https://raw.githubusercontent.com/nightsamuraisec/btk-usom-sorgulama/main/usom_link_plugin.user.js">
+    <img src="https://img.shields.io/badge/Kur-USOM%20Userscript-111827?style=for-the-badge" alt="Userscript Kur" />
+  </a>
+</p>
+
+<p align="center">
   <a href="#-proje-hakkında-about-the-project">Hakkında</a> ·
   <a href="#-ekran-görüntüleri-screenshots">Ekran Görüntüleri</a> ·
+  <a href="#-tampermonkey-userscript">Userscript</a> ·
   <a href="#-özellikler-features">Özellikler</a> ·
   <a href="#-dosya-ağacı-folder-structure">Dosya Ağacı</a> ·
   <a href="#-kullanılan-teknolojiler-built-with">Teknolojiler</a> ·
@@ -55,6 +66,23 @@ PyQt5 ikili panel: BTK site sorgu (OCR captcha) ve USOM/SGB adres API’si. İst
 
 ---
 
+## 🧩 Tampermonkey Userscript
+
+1. **Tampermonkey** kur:
+   - [Chrome / Edge](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+   - [Firefox](https://addons.mozilla.org/firefox/addon/tampermonkey/)
+2. Aşağıdaki linke tıkla (raw `.user.js` açılır — Tampermonkey kurulum sorar):
+
+   **→ [usom_link_plugin.user.js kur](https://raw.githubusercontent.com/nightsamuraisec/btk-usom-sorgulama/main/usom_link_plugin.user.js)**
+
+Doğrudan raw URL:
+
+```text
+https://raw.githubusercontent.com/nightsamuraisec/btk-usom-sorgulama/main/usom_link_plugin.user.js
+```
+
+---
+
 ## ✨ Özellikler (Features)
 
 - 🔍 Domain sorgu otomasyonu
@@ -70,7 +98,7 @@ PyQt5 ikili panel: BTK site sorgu (OCR captcha) ve USOM/SGB adres API’si. İst
 ```text
 btk-usom-sorgulama/
 ├── btk_query.py
-├── usom_link_plugin.js
+├── usom_link_plugin.user.js
 ├── requirements.txt
 ├── screenshots/
 │   ├── gui.png
@@ -126,7 +154,9 @@ APP_DEBUG=false
 ```bash
 python btk_query.py
 ```
-`usom_link_plugin.js` dosyasını Tampermonkey'e ekle.
+
+Userscript (Tampermonkey kuruluysa tek tık):  
+[usom_link_plugin.user.js kur](https://raw.githubusercontent.com/nightsamuraisec/btk-usom-sorgulama/main/usom_link_plugin.user.js)
 
 ### `screenshots/` klasörüne kayıt
 

@@ -1,13 +1,17 @@
 // ==UserScript==
 // @name         USOM Yasaklı Site Kontrolü (Arayüzlü)
 // @namespace    http://tampermonkey.net/
-// @version      1.1
-// @description  Ziyaret edilen sitenin alan adını USOM yasaklı URL listesiyle kontrol eder ve sağ altta kalıcı bir durum etiketi (arayüz) gösterir.
+// @version      1.2
+// @description  Ziyaret edilen sitenin alan adını USOM/SGB zararlı liste API’siyle kontrol eder ve sağ altta kalıcı bir durum etiketi gösterir.
 // @author       nightsamuraisec
 // @match        *://*/*
 // @grant        GM.xmlHttpRequest
 // @grant        GM.addStyle
 // @connect      usom.gov.tr
+// @connect      siberguvenlik.gov.tr
+// @connect      www.siberguvenlik.gov.tr
+// @downloadURL  https://raw.githubusercontent.com/nightsamuraisec/btk-usom-sorgulama/main/usom_link_plugin.user.js
+// @updateURL    https://raw.githubusercontent.com/nightsamuraisec/btk-usom-sorgulama/main/usom_link_plugin.user.js
 // @run-at       document-start
 // ==/UserScript==
 
