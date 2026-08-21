@@ -1,0 +1,30 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local secrets / runtime
+.env
+*.log
+ngrok.exe
+ngrok
+btk_captcha.png
+
+# runtime captures (keep README shots)
+screenshots/*.tmp
+screenshots/QR_Capture_*.png
+screenshots/generated_qr.png
